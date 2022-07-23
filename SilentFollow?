@@ -1,0 +1,11 @@
+local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local humrp = char.HumanoidRootPart
+
+local part = game:GetService("Workspace").zazumiii.HumanoidRootPart
+
+while true do
+	humrp.CFrame = CFrame.lookAt(humrp.Position, Vector3.new(part.Position.X, humrp.Position.Y, part.Position.Z))
+	task.wait()
+end
+-- idek what 2 call this, looks cool tho
